@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BYJU'S</title>
+    <link rel="icon" type="jpg/png" href="Images/Logo/byjus logo.jpg" />
+    <link rel="stylesheet" href="CSS/all.css">
+    <link rel="stylesheet" href="CSS/My Style.css">
+    <style>
+        .a1 {
+            width: 200px;
+            background-color: yellow;
+            padding: 10px;
+            border-radius: 10px;
+            position: fixed;
+            left: -235px;
+            top: 100px;
+            z-index: 100;
+            transition: all 0.5s;
+
+        }
+
+        .a1:hover {
+            left: 0px;
+            cursor: pointer;
+            /*filter: blur(4px);*/
+        }
+
+        .m1 {
+            width: 30%;
+            height: 300px;
+            border: 1px solid;
+            margin-left: 20px;
+            margin-top: 50px;
+        }
+
+        #vmenu {
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #vmenu li {
+            display: block;
+            width: 250px;
+            border-bottom: 1px solid rgb(12, 76, 37);
+        }
+
+        #vmenu :last-child {
+            border-bottom: none;
+        }
+
+        #vmenu li a {
+            color: rgb(255, 255, 255);
+            background-color: rgb(21, 115, 230);
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            font-family: trebuchet ms;
+            transition: all 0.5s;
+        }
+
+        #vmenu li a:hover {
+            background-color: rgb(244, 230, 230);
+            font-weight: bold;
+            color: rgb(31, 31, 24);
+            padding-left: 20px;
+            cursor: pointer;
+        }
+        #d2:hover{
+            box-shadow: 2px 2px rgb(11, 11, 161);
+            color: red;
+            font-size: 15px;
+        }
+        .mymodal{
+            z-index: 500px;
+            position: fixed;
+            top: 10px;
+            /*background-color: blue;*/
+        }
+    </style>
+</head>
+
+<body leftmargin="50">
+    <ul class="a1" id="vmenu">
+        <li><a href="index.html" target="_blank">Home</a></li>
+        <li><a href="Multi div.html" target="_blank">About Us</a></li>
+        <li><a href="@">Contact Us</a></li>
+        <li><a href="Link CSS.html" target="_blank">Services</a></li>
+        <li><a href="index.html" target="_blank">Download</a></li>
+        <li><a href="Page 2.html" target="_blank">Enquiry</a></li>
+        <li><a href="Form.html" target="_blank">Registration</a></li>
+        <li><a href="#">Log Out</a></li>
+    </ul>
+    <div style="padding: 20px; background-color: white; text-align: justify;">
+        <div><button id="d2" onclick="modalvisible()"><i class="fa fa-save"></i>&nbsp;Register Now</button><br>
+            <h>
+                <center><u>
+                        <font face="arial" size="6" color="green">The BYJU'S Learning App</font>
+                    </u></center>
+            </h>
+            <hr />
+            <p>
+                <font face="arial">
+                    Mumbai: BYJU'S, India's largest education comppany and creator of the largest personalized K-12 app
+                    in
+                    the country unvelied is new identity and refreshed brnd logo. Celebrating personalized and life-long
+                    learnig experiences,the new logo signifies the 'Window to learning' that BYJU'S opens up for
+                    students
+                    across grades and geographies.
+            </p>
+            <p> Conceptualized from crowd sourced ideas from within the organized by the in-house design and brand team.
+                the
+                new logo represents BYJU'S vision to transform learning in india backed by technology. The concept of
+                'Window to Learning' has been represenbted bt a 'B' that Text Box. </p>
+            </font>
+            <marquee direction="right" scrollamout="10" bgcolor="yellow" onmouseover="this.stop()"
+                onmouseout="this.start()"> The byju's is the largest education platform</marquee>
+            <h><b>
+                    <font size="5" face="arial">History-</h>
+            </font></b>
+            <hr />
+            <p>
+                <font face="arial">Byju's app was developed by Think and Learn Pvt. Ltd, a company which was established
+                    by
+                    Byju Raveendran, Divya Gokulnath and a group of students in 2011.[7][1][8] Byju, an engineer by
+                    profession was coaching students in mathematics since 2006.[7][9] In initial days the company
+                    focused on
+                    offering online video-based learning programs for the K-12 segment and for competitive
+                    exams.[10][11] In
+                    2012, the firm entered Deloitte Technology Fast 50 India and Deloitte Technology Fast 500 Asia
+                    Pacific
+                    ratings and has been present there ever since.[1][12]<br /><br />
+                    <center>
+                        <img src="Images/byju2.png" height="200px" border="5" />
+                    </center>
+                    <br /><br />In August 2015, the firm launched Byju's: The Learning App.[13][10] In 2017, they
+                    launched
+                    Byju's Math App for kids and Byju's Parent Connect app.[14][15] By 2018, it had 15 million users out
+                    of
+                    which 900,000 were paid users at that time.[16][17] In the same year, Byju's became India’s first
+                    edtech
+                    unicorn.[18] By 2019, 60% of BYJU’S students were from non-metros and rural cities.[19]<br /><br />
+                    <center>
+                        <img src="Images/byju1.jpg" height="200px" border="5" />
+                    </center>
+                    <br /><br />In January 2022, the company joined Simplilearn, Unacademy, upGrad, PrepInsta Prime and
+                    Vedantu to become one of the founding members of IAMAI's India EdTech Consortium.[20]<br /><br />In
+                    March 2022, it signed a contract with Qatar Investment Authority to establish a new edtech company
+                    and a
+                    R&D centre in Doha.[21]<br /><br />
+                    <center>
+                        <img src="Images/byju3.jpg" height="200px" border="5" />
+                    </center>
+                    <br /><br />In August 2022, Bloomberg News reported that the Ministry of Corporate Affairs sent a
+                    letter
+                    to Byju's asking them to explain the non-filing of its audited financials for the year ending March
+                    2021. Having missed the deadline by over 17 months, Byju's reasoned the delay was due to the
+                    challenge
+                    of consolidating the accounts of its acquisitions during that year.[22] In spite of the delay,
+                    Deloitte
+                    gave the company a clean audit.[23] In November 2022, many employees of Byju's came out to speak
+                    against
+                    the company's unfair treatment. Reportedly, Byju's sacked over 5,000 employees.[24]
+            </p>
+            <div id="mymodal" class="mymodal" style="display: none;">
+                <center>
+                    <div class="outer">
+                        <foem>
+                            <table>
+                                <tr>
+                                    <td colspan="2"
+                                        style="text-align: center; color:rgba(237, 227, 227, 0.87); background-color: rgb(89, 59, 239);">
+                                        <h1>Student Registration Form</h1>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 35%;">Candidate Name</td>
+                                    <td><input type="text" placeholder="Enter your name.."
+                                            style="width: 100%; height: 25px;" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 35%;">Father's Name</td>
+                                    <td><input type="text" placeholder="Enter father's name.."
+                                            style="width: 100%; height:25px;" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 35%;">Date of Birth</td>
+                                    <td><input type="date" /></td>
+                                </tr>
+                                <tr>
+                                    <td>Gender</td>
+                                    <td><input type="radio" name="rlbgender" checked />&nbsp;Male&nbsp;
+                                        <input type="radio" name="rlbgender" />&nbsp;Female&nbsp;
+                                        <input type="radio" name="rlbgender" />&nbsp;Transgender&nbsp;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Religion</td>
+                                    <td>
+                                        <select style="height: 25px; width: 100%;">
+                                            <option>Select</option>
+                                            <option>Hindu</option>
+                                            <option>Muslim</option>
+                                            <option>Christian</option>
+                                            <option>Sikh</option>
+                                            <option>Others</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Language</td>
+                                    <td>
+                                        <input type="checkbox" checked disabled>&nbsp;Hindi&nbsp;
+                                        <input type="checkbox">&nbsp;English&nbsp;
+                                        <input type="checkbox">&nbsp;Urdu&nbsp;
+                                        <input type="checkbox">&nbsp;Other
+                                    </td>
+                                </tr>
+                            </table>
+                        </foem>
+                        ,<div style="text-align: right;">
+                        <button><i class="fa fa-save"></i>&nbsp;Submit</button>
+                        <button onclick="modalcancel()" id="btncancel"><i class="fa fa-times"></i>&nbsp;Cancel</button>
+                    </div>
+                    </div>
+                </center>
+                <script src="JS/jquery-3.6.0.js"></script>
+                <script>
+                    $(document).ready(function () {
+                        $("#mymodal").fadeIn();
+                    });
+
+                    // $("#btncancel").click(function(){
+                    //     $("#mymodal").fadeOut();
+                    // })
+
+                    function modalcancel() {
+                        $("#mymodal").fadeOut();
+                    }
+                    function modalvisible() {
+                        $("#mymodal").fadeIn();
+                    }
+                </script>
+                
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        .a1{
+            /*width:fit-content;
+            background:rgb(46, 46, 238);*/
+            height: 220px;
+            padding: 20px;
+            /*margin:10%*/
+            font-family:'Trebuchet MS',;
+            border-radius: 30px;
+        }
+        table{
+            background-color: white;  
+            box-shadow: 0px 0px 20px rgb(241, 30, 7);  
+            border-radius: 10px;          
+        }
+        td{
+            background-color: rgb(120, 14, 102);
+            color: white;
+            border-radius: 7px;
+        }
+        td:hover{
+            font-size: larger;
+            background-color: rgb(99, 241, 99);
+            color: #181818;
+        }
+        button{
+            background: hwb(198 3% 11% / 0.909);
+            color:hwb(0 1% 93%);
+            border-radius: 7px;
+        }
+        button:hover{
+            background-color: rgb(50, 50, 167);
+            color: white;
+            font-size: medium;
+        }
+    </style>
+</head>
+<body>
+    <div class="a1">
+        <table border="1" cellpadding="10" align="center">
+            <tr>
+                <td colspan="2" style="text-align: center;">Calculator</td>
+            </tr>
+            <tr>
+                <td>Number 1</td>
+                <td><input id="txtn1" type="number"></td>
+            </tr>
+            <tr>
+                <td>Number 2</td>
+                <td><input id="txtn2" type="number"></td>
+            </tr>
+            <tr>
+                <td>Result</td>
+                <td><input id="txtres" type="number" disabled></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button id="btnAdd">&nbsp;Add&nbsp;</button>
+                    <button id="btnSubtract">&nbsp;Subtract&nbsp;</button>
+                    <button id="btnMultiply">&nbsp;Multiply&nbsp;</button>
+                    <button id="btnDivide">&nbsp;Divide&nbsp;</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script src="js/jquery-3.6.0.js"></script>
+    <script>
+        $("#btnAdd").click(function(){
+            var a = parseInt($("#txtn1").val());
+            var b = parseInt($("#txtn2").val());
+            var res = a + b;
+            $("#txtres").val(res);
+        });
+
+        $("#btnSubtract").click(function(){
+            var a = parseInt($("#txtn1").val());
+            var b = parseInt($("#txtn2").val());
+            var res = a - b;
+            $("#txtres").val(res);
+        });
+
+        $("#btnMultiply").click(function(){
+            var a = parseInt($("#txtn1").val());
+            var b = parseInt($("#txtn2").val());
+            var res = a * b;
+            $("#txtres").val(res);
+        });
+
+        $("#btnDivide").click(function(){
+            var a = parseInt($("#txtn1").val());
+            var b = parseInt($("#txtn2").val());
+            var res = a / b;
+            $("#txtres").val(res);
+        });
+
+    </script>
+</body>
+</html>

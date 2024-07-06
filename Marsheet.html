@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <table cellspecing="0px" cellpadding="10px" border="1px">
+        <tr>
+            <td colspan="2">Students Result</td>
+        </tr>
+        <tr>
+            <td>PC/td>
+            <td><input id="a1" type="number"></td>
+        </tr>
+        <tr>
+            <td>POM</td>
+            <td><input id="a2" type="number"></td>
+        </tr>
+        <tr>
+            <td>Mathematics I</td>
+            <td><input id="a3" type="number"></td>
+        </tr>
+        <tr>
+            <td>CFPC</td>
+            <td><input id="a4" type="number"></td>
+        </tr>
+        
+        <tr>
+            <td>EVS</td>
+            <td><input id="a5" type="number"></td>
+        </tr>
+        <tr>
+            <td>Result</td>"#btnMultiply"
+            <td><input id="Result" disabled></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button id="btadd">Add</button>
+                <button id="btsub">Subtract</button>
+                <button id="btmult">Multiply</button>
+                <button id="btdivide">Divide</button>
+            </td>
+        </tr>
+    </table>
+    <script src="jq/jquery-3.6.0.js"></script>
+    <script>
+
+        $("#btadd").click(function(){
+            var a = parseInt($("#a1").val());
+            var b = parseInt($("#a2").val());
+            var c = parseInt($("#a3").val());
+            var d = parseInt($("#a4").val());
+            var e = parseInt($("#a5").val());
+            var res = a + b + c + d + e;
+            $("#Result").val(res);
+        });
+
+        $("#btsub").click(function(){
+            var a = parseInt($("#a1").val());
+            var b = parseInt($("#a2").val());
+            var c = parseInt($("#a3").val());
+            var d = parseInt($("#a4").val());
+            var e = parseInt($("#a5").val());
+            var res = a - b - c - d - e;
+            $("#Result").val(res);
+        });
+
+    </script>
+</body>
+</html>

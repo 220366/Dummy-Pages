@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team Members..</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body{
+            background: url(Images/blurback.jpg);
+            background-size: cover;
+        }
+
+        .wrapper{
+            /* border:2px solid black; */
+            margin-top: 5%;
+        }
+
+        .wrapper h1{
+            text-align: center;
+            color:white;
+            font-size: 40px;
+            margin-bottom: 70px;
+        }
+
+        .wrapper .memberouter{
+            /* border:1px solid red; */
+            display:flex;
+            text-align: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }       
+
+        .memberouter .member{
+            width: 300px;
+            background-color: white;
+            margin: 10px;
+            line-height: 30px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px black;
+            position: relative;
+        }
+
+        .member h3{
+            margin-top: 100px;
+            color:green;
+            font-family: arial;
+            font-size: 25px;
+        }
+
+        .member p.role{
+            color:red;
+            font-weight: bold;
+            margin-top: 5px;
+            text-transform: uppercase;
+        }
+
+        .member p.abt{
+            color:rgb(145, 4, 62);
+            margin-bottom: 10px;
+            text-align: justify;
+            padding: 10px;
+        }
+
+        .member .picouter{
+            background-color: rgb(255, 255, 255);
+            border-radius: 50%;
+            position: absolute;
+            left:50%;
+            transform: translateX(-50%);
+            top:-50px;
+        }
+
+        .picouter img{
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            padding: 8px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Our Team Members</h1>
+        <div class="memberouter">
+            <div class="member">
+                <div class="picouter">
+                    <img src="Images/sachin.jpg">
+                </div>
+                <h3>Sachin Tendulkar</h3>
+                <p class="role">Former Indian Cricket</p>
+                <p class="abt">“Don't stop chasing your dreams, because dreams do come true.” “As far as the
+                    World
+                    Cup is concerned,
+                    it is a process. We don't want to jump to the 50th floor straight away. We must
+                    start on the ground
+                    floor.”
+                </p1>
+            </div>
+            <div class="member">
+                <div class="picouter">
+                    <img src="Images/sania.jfif">
+                </div>
+                <h3>Sania Mirza</h3>
+                <p class="role">Indian Tennis Player</p>
+                <p class="abt">As tennis players, you are never satisfied. We are greedy as players, always want
+                    better results. As
+                    long as I am winning, people shouldn't care whether my skirt is six inches long
+                    or 6
+                    feet long.
+                </p>
+            </div>
+            <div class="member">
+                <div class="picouter">
+                    <img src="Images/ravish.png">
+                </div>
+                <h3>Ravish Kumar</h3>
+                <p class="role">Famous Journalist</p>
+                <p class="abt">It’s heartening to see that we are still survived by those few who are putting
+                    their
+                    lives and
+                    careers at risk to practice honest journalism.
+                </p>
+            </div>
+        </div>
+    </div>    
+</body>
+</html>
